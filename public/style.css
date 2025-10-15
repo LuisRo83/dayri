@@ -203,7 +203,7 @@ body {
 /* --- ESTILOS RESPONSIVOS --- */
 
 /* Para tablets y teléfonos en horizontal (pantallas de hasta 992px de ancho) */
-@media (max-width: 992px) {
+@media (max-width: 900px) {
     .boxcont {
         /* Reduce el ancho del contenedor principal si es necesario */
         width: 90%; 
