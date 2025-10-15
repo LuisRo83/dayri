@@ -206,7 +206,7 @@ body {
 @media (max-width: 900px) {
     .boxcont {
         /* Reduce el ancho del contenedor principal si es necesario */
-        width: 90%; 
+        width: 81%; 
     }
 }
 
@@ -214,11 +214,7 @@ body {
 /* Para teléfonos móviles (pantallas de hasta 600px de ancho) */
 @media (max-width: 600px) {
     
-    /* Ejemplo para el contador */
-    #countdown {
-        flex-direction: column; /* Apila los elementos (días, horas, etc.) verticalmente */
-        align-items: center;    /* Centra los elementos apilados */
-    }
+
 
     /* Ajusta el tamaño de los títulos principales */
     .eventname1 {
@@ -226,11 +222,45 @@ body {
     }
 
     .eventname2 {
-        font-size: 4em;
+        font-size: 9em;
     }
     
     /* Asegúrate de que las cajas de confirmación, vestido, etc., ocupen todo el ancho */
     .boxconfirmacion, .codigovestido, .regalo, .fotos {
-        padding: 20px; /* Ajusta el padding para pantallas pequeñas */
+        padding: 10px; /* Ajusta el padding para pantallas pequeñas */
     }
+	
+	
+.eventname1  {
+	font-family: "Cookie", cursive;
+	font-size: 54px;
+	line-height: 20px;
+	text-align: center;
+	margin-top: 120px;
+	}
+
+
+.countdown {
+	padding-top: 30px;
+	font-family: "Cookie", cursive;
+    text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+	.dia, .hora, .minuto, .segundo  {
+	padding-left: 10px;
+	padding-right: 10px;
+	}
+	
+	.cont-vestido {
+	padding: 10px;
+	padding-top: 10px;
+	padding-bottom: 0px;
+	text-align: justify;
+}
+	.codigovestido, .regalo, .fotos {
+	margin-bottom: 60px;
+}
+	
+	
 }
