@@ -197,3 +197,40 @@ body {
         .close-button:hover {
             opacity: 1;
         }
+
+
+
+/* --- ESTILOS RESPONSIVOS --- */
+
+/* Para tablets y teléfonos en horizontal (pantallas de hasta 992px de ancho) */
+@media (max-width: 992px) {
+    .boxcont {
+        /* Reduce el ancho del contenedor principal si es necesario */
+        width: 90%; 
+    }
+}
+
+
+/* Para teléfonos móviles (pantallas de hasta 600px de ancho) */
+@media (max-width: 600px) {
+    
+    /* Ejemplo para el contador */
+    #countdown {
+        flex-direction: column; /* Apila los elementos (días, horas, etc.) verticalmente */
+        align-items: center;    /* Centra los elementos apilados */
+    }
+
+    /* Ajusta el tamaño de los títulos principales */
+    .eventname1 {
+        font-size: 3em; /* Reduce el tamaño para que quepa en la pantalla */
+    }
+
+    .eventname2 {
+        font-size: 4em;
+    }
+    
+    /* Asegúrate de que las cajas de confirmación, vestido, etc., ocupen todo el ancho */
+    .boxconfirmacion, .codigovestido, .regalo, .fotos {
+        padding: 20px; /* Ajusta el padding para pantallas pequeñas */
+    }
+}
