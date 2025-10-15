@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Mis XV Años Dayri</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+	
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cookie&family=Fleur+De+Leah&family=Great+Vibes&display=swap" rel="stylesheet">
+	
+	<style>
+        body { font-family: Arial, sans-serif; }
+        label { display: block; margin-top: 10px; font-weight: bold; }
+        input[type="text"], input[type="tel"], select { width: 100%; padding: 8px; margin-top: 5px; box-sizing: border-box; }
+        button { margin-top: 20px; padding: 10px 15px; background-color: #4CAF50; color: white; border: none; cursor: pointer; }
+    </style>
+	<script src="https://kit.fontawesome.com/95cbd09dd1.js" crossorigin="anonymous"></script>
+
+<body marginheight="0" marginwidth="0">
+<div class="boxcont">
+<div class="title">
+	<div class="eventname1">
+		Mis XV años
+			</div>
+	<div class="eventname2">
+		Dayri
+			</div>
+</div>
+	
+<div id="countdown" class="countdown">
+        <div class="dia">
+            <span id="days"></span>
+            <div class="label">Días</div>
+        </div>
+        <div class="hora">
+            <span id="hours"></span>
+            <div class="label">Horas</div>
+        </div>
+        <div class="minuto">
+            <span id="minutes"></span>
+            <div class="label">Minutos</div>
+        </div>
+        <div class="segundo">
+            <span id="seconds"></span>
+            <div class="label">Segundos</div>
+        </div>
+</div>
+
+    <script src="script.js"></script>
+	
+<div id="confirma" class="confirmacion">	
+	    <div class="eventname3">Confirmación de Asistencia</div>
+	<div class="boxconfirmacion">
+    <form action="mailto:tucorreo@ejemplo.com" method="post" enctype="text/plain">
+
+        <label for="nombre">Nombre Completo:</label>
+        <input type="text" id="nombre" name="Nombre" required>
+
+        <label for="telefono">Número de Teléfono:</label>
+        <input type="tel" id="telefono" name="Telefono" placeholder="Incluye código de área" required>
+
+        <label for="asistencia">Asistencia:</label>
+        <select id="asistencia" name="Confirmacion de Asistencia" required>
+            <option value="" disabled selected>Selecciona una opción</option>
+			<option value="Asistire a la Misa">Asistiré a la misa</option>
+			<option value="Asistire a la Fiesta">Asistiré a la fiesta</option>
+            <option value="Asistire a Ambos Eventos">Asistiré a ambos eventos</option>
+            <option value="No podré asistir. Agradezco la invitación">No asistiré pero agradezco la invitación</option>
+        </select>
+
+        <button  class="botones" type="submit">Enviar Confirmación</button>
+
+    </form>
+	</div>
+</div>
+
+<div id="vestimenta" class="codigovestido">
+	<div class="iconvestido"><i class="fa-solid fa-user-tie"></i></div>
+	<div class="eventname4">Código de vestimenta</div>
+	<div class="cont-vestido"><b>Código de vestimenta formal.</b> Se agradece de antemano la gentileza de <b>omitir el color rojo en su atuendo.</b> Su cortesía contribuye a la ambientación de este gran momento.</div>
+</div>
+	
+<div id="obsequios" class="regalo">
+	<div class="iconregalo"><i class="fa-solid fa-gifts"></i></div>
+	<div class="eventname4">¿Obsequio en efectivo?</div>
+	<div class="cont-vestido"><b>Su presencia es nuestro obsequio más preciado.</b> Hemos dispuesto de una cuenta bancaria para quienes tengan la deferencia de realizar un obsequio monetario. A continuación, detallamos la información para su mayor comodidad. <b>Su generosidad será recibida con profunda gratitud.</b></div>
+	
+	    <button  class="botones" onclick="openModal('modal-imagen-jpg')">Datos de cuenta</button>
+
+    <div id="modal-imagen-jpg" class="modal-overlay">
+        
+        <span class="close-button" onclick="closeModal('modal-imagen-jpg')">&times;</span>
+
+        <div class="modal-content">
+            
+            <img src="cuenta-b.jpg" alt="Imagen en Modal">
+            
+        </div>
+    </div>
+
+    <script>
+        // Función para abrir el modal, estableciendo el display a 'flex' para mostrarlo centrado.
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = 'flex';
+        }
+
+        // Función para cerrar el modal, ocultándolo.
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+        }
+    </script>
+	
+</div>
+	
+<div id="camera" class="fotos">
+	<div class="iconfoto"><i class="fa-solid fa-camera-retro"></i></div>
+	<div class="eventname4">Fotos y Videos</div>
+	<div class="cont-vestido">Con el fin de <b>preservar la plenitud de este grato momento,</b> solicitamos la remisión del material audiovisual que hayan capturado. <b>Cada imagen y video será un invaluable testimonio de nuestra felicidad compartida.</b></div>
+	<a style="text-decoration: none;" href="https://moments.invitafy.com/?id=7087" target="_blank" rel="noopener noreferrer">
+    <button class="botones">Subir imagenes</button>
+</a>
+</div>	
+	
+</div>
+	
+	
+    
+
+	
+	
+	
+</body>
+</html>
