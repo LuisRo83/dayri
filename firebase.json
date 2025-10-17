@@ -16,8 +16,10 @@
       ],
       "headers": [
         {
-          // La página principal nunca debe ser cacheadas por el navegador.
-          "source": "index.html",
+          // Esta regla aplica a todos los archivos HTML, CSS y JS.
+          // La política 'no-cache' le dice al navegador que siempre revalide el archivo
+          // con el servidor antes de usar la versión local.
+          "source": "**/*.@(html|css|js)",
           "headers": [
             {
               "key": "Cache-Control",
@@ -26,13 +28,13 @@
           ]
         },
         {
-          // Los archivos estáticos pueden ser cacheados por 1 año (para rendimiento),
-          // ya que Firebase y su CDN se encargarán de invalidar el caché si el contenido cambia.
-          "source": "**/*.@(js|css|webp|jpg|jpeg|gif|png|svg|eot|otf|ttf|woff|woff2)",
+          // Archivos estáticos como imágenes pueden seguir teniendo un caché largo
+          // ya que no cambian con tanta frecuencia.
+          "source": "**/*.@(jpg|jpeg|gif|png|webp|svg)",
           "headers": [
             {
               "key": "Cache-Control",
-              "value": "public, max-age=31536000" // 1 año en segundos
+              "value": "public, max-age=31536000" // 1 año
             }
           ]
         }
