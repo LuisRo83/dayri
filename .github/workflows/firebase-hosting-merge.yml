@@ -15,7 +15,7 @@ jobs:
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
           # 1. CAMBIO: Usar el nombre de secreto que contiene las credenciales del proyecto cideasnet-30367
-          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_CIDEASNET_30367 }}
+          firebaseServiceAccount: ${{ FIREBASE_SERVICE_ACCOUNT_XV_DAYRI }}
           channelId: live
           # 2. CAMBIO CRÍTICO: Usar el ID del proyecto correcto
           projectId: cideasnet-30367
