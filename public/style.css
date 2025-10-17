@@ -287,7 +287,6 @@ body {
 		font-size: 40px;
 		font-weight: bold;
 	}
-	
 	.cont-vestido {
 	padding: 10px;
 	padding-top: 10px;
@@ -296,12 +295,11 @@ body {
 }
 .cont-oracion {
 	font-size: 33px;
-	line-height: 24px;
+	line-height: 27px;
 	padding: 12px;
 	padding-top: 10px;
 	padding-bottom: 0px;
 	text-align: justify;
 }
-	
 	
 }
