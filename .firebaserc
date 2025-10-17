@@ -1,5 +1,15 @@
 {
   "projects": {
     "default": "xv-dayri"
-  }
+  },
+  "targets": {
+    "xv-dayri": {
+      "hosting": {
+        "xvdayri": [
+          "cideasnet-30367"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }
