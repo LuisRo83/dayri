@@ -157,8 +157,6 @@ body {
 	display: block;
 }
 
-
-
         /* La superposición (overlay) - Fija en toda la pantalla */
         .modal-overlay {
             /* CAMBIO CLAVE: Iniciamos completamente oculto */
@@ -213,7 +211,3 @@ body {
         .close-button:hover {
             opacity: 1;
         }
-
-
-
-
